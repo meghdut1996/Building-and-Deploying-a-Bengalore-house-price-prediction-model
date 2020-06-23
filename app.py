@@ -1,5 +1,6 @@
 import flask
 from flask import request, render_template
+from sklearn.externals import joblib
 from babel.numbers import format_currency
 from flask_babel import Babel
 app=flask.Flask(__name__,template_folder='templates')
@@ -15,7 +16,6 @@ def home():
 
 @app.route('/predict',methods=['GET'])
 def predict():
-    from sklearn.externals import joblib
     model=joblib.load('house_price.ml')
     house_price=model.predict([[int(request.args['place']),
                                 int(request.args['sqft']),
