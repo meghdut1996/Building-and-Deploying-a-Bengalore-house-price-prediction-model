@@ -15,7 +15,8 @@ def home():
 
 @app.route('/predict',methods=['GET'])
 def predict():
-    from sklearn.externals import joblib
+#     from sklearn.externals import joblib
+    from joblib import load
     model=joblib.load('house_price.ml')
     house_price=model.predict([[int(request.args['place']),
                                 int(request.args['sqft']),
