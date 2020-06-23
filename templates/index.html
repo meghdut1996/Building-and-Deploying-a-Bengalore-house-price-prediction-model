@@ -191,7 +191,7 @@
                 var bhk= $("#bhk option:selected").val();
                 var built= $("#built option:selected").val();
                 
-                $.get("/predict",{place:place,sqft:sqft,yearsOld:yearsOld,floor:floor,totalFloor:totalFloor,bhk:bhk,built:built},function(response){$("#result").html("Price of the house is "+ response);});         
+                $.get("/predict",{place:place,sqft:sqft,yearsOld:yearsOld,floor:floor,totalFloor:totalFloor,bhk:bhk,built:built},function(response){$("#result").html("Price of the house should be "+ response);});         
             });
         });
       </script>  
