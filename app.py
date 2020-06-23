@@ -13,7 +13,7 @@ CORS(app)
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['GET'])
 def predict():
     from sklearn.externals import joblib
     model=joblib.load('house_price.ml')
