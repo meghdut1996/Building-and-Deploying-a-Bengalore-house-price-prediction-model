@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>House Price Prediction System</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="static/i/logo.png" type="image/x-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,400,600,500,700,800,900|DM+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+		<!-- Bootstrap 4.3.1 CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery .fancybox.min.css" />
+		<!-- AOS 2.3.4 jQuery plugin CSS (Animations) -->
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- Startup 3 CSS (Styles for all blocks) -->
+		<link href="static/css/style.css" rel="stylesheet" /> 
+		<!-- jQuery 3.3.1 -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+	</head> 
+	<body>     
+		<!-- Navigation 1 -->
+		<nav class="pt-0 pb-10 bg-light text-center navigation_1">
+			<div class="container px-xl-10">
+				<div class="row justify-content-center align-items-center f-16">
+					<div class="mb-0 mb-lg-50 col-lg-0 text-lg-left" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+						<img src="static/i/yodafy.png"/>
+					</div>
+					<div class="col-lg-140" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+						<a href="#" class="link mx-15 color-main">Home</a>
+						<a href="#" class="link mx-1 color-main">Features</a>
+						<a href="#" class="mx-15 link color-main">
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+<!-- Navigation Mobile type 2 -->
+
+<a class="open_menu color-main bg-light radius_full"><i class="fas fa-bars lh-40"></i></a>
+        <!-- Header 2 -->
+		<header class="pt-4 pb-4 bg-dark header_2">
+			<div class="container">
+				<div class="mb-2 logo color-white d-block d-xl-none text-center logo_mobile" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">House Price Prediction System</div>
+				<h2 class="big color-white text-center" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Predict House Prices with <br> 90% accuracy</h2>
+				<div class="mw-690 mx-auto mt-20 f-20 color-white op-9 text-center text-adaptive">				
+                <div data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                    Buy a house with appropriate prices in your  desired area <br>
+                    Sell your house at the right price using our house price prediction product
+				</div>
+				</div>				
+			</div>
+		</header>
+
+		<!-- Form 1 -->
+		<section class="pt-120 pb-120 bg-dark form_1">
+			<style>
+				.form_1{background-image:url(static/i/house.jpg);}
+				@media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+					.form_1{background-image:url(static/i/house.jpg);}
+				}
+			</style>
+			<div class="container px-xl-0">
+				<form  class="bg-light mx-auto mw-630 radius10 pt-40 px-30 pb-30" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150" >
+					<h2 class="mb-40 small text-center" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Start Prediction</h2>
+                    
+						<select id="place" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required>
+                             <option selected disabled>Select Location</option>
+                             <option value="1">BTM Layout</option>
+                             <option value="2">Yelahanka</option>
+                             <option value="3">Whitefield</option>
+                             <option value="4">Ambalipura</option>
+                             <option value="5">Devarabeesana Halli</option>
+                             <option value="6">Yelachenahalli</option>
+                             <option value="7">KR Puram</option>
+                             <option value="8">Electronics City Phase 1</option>
+                             <option value="9">Abbaiah Reddy Layout</option>
+                             <option value="10">Subramanyapura</option>
+                             <option value="11">Rajaji Nagar</option>
+                             <option value="12">Sarakki Nagar</option>
+                             <option value="13">Gunjur</option>
+                             <option value="14">Malleshwaram</option>
+                             <option value="15">Frazer Town</option>
+                         </select>
+					
+						<input type="text" id="sqft"  placeholder="Enter Sq.ft  (Ex. 15000)" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required/>
+					               
+                         <select id="yearsOld" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required>
+                             <option selected disabled>Select Years Old</option>
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5">5</option>
+                             <option value="6">6</option>
+                             <option value="7">7</option>
+                             <option value="8">8</option>
+                             <option value="9">9</option>
+                             <option value="10">10</option>
+                             <option value="11">15+</option>
+                        </select>
+                    
+                         <select id="floor" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required>
+                             <option selected disabled>Select Floor</option>
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5">6</option>
+                             <option value="6">8</option>
+                             <option value="7">10</option>
+                             <option value="8">15</option>
+                             <option value="9">17</option>
+                             <option value="10">18</option>                             
+                         </select>
+                                     
+                    
+                         <select id="totalFloor" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required>
+                             <option selected disabled>Select Total Floor</option>
+                             <option value="1">4</option>
+                             <option value="2">5</option>
+                             <option value="3">10</option>
+                             <option value="4">18</option>
+                             <option value="5">23</option>
+                             <option value="6">29</option>
+                         </select>
+                                  
+					
+                         <select id="bhk" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required>
+                             <option selected disabled>Select BHK</option>
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5">6</option>
+                         </select>
+                  
+                         <select id="built" class="mb-20 input border-gray focus-action-1 color-heading placeholder-heading w-full" required>
+                             <option selected disabled>Select Built Type</option>
+                             <option value="1">Built-up Area</option>
+                             <option value="2">Super Built-up Area</option>
+                         </select>
+                  
+						<button id="predict_btn" class="mb-20 btn mt-2 action-3 w-full">Predict Price</button>
+                    
+                    <div class="mt-25 f-18 medium" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+					<div id="result" class="mt-0 pt-0 pb-0 px-20 f-22 text-adaptive right_side">
+						Price of the house is 
+					</div>
+                    </div>
+                </form>
+			</div>
+		</section>
+
+
+<!--		<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>-->
+		
+		<!-- Bootstrap 4.3.1 JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+		<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<!-- Google maps JS API -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+		<!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
+		<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+		<!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+		<script src="static/js/jquery.maskedinput.min.js"></script>
+		<!-- Startup 3 JS (Custom js for all blocks) -->
+		<script src="static/js/script.js"></script>
+        
+        
+	</body>
+    
+    <script>
+        $(document).ready(function(){
+            $("#predict_btn").click(function(){
+                var place= $("#place option:selected").val();
+                var sqft= $("#sqft").val();
+                var yearsOld= $("#yearsOld option:selected").val();
+                var floor= $("#floor option:selected").val();
+                var totalFloor= $("#totalFloor option:selected").val();
+                var bhk= $("#bhk option:selected").val();
+                var built= $("#built option:selected").val();
+                
+                $.get("/predict",{place:place,sqft:sqft,yearsOld:yearsOld,floor:floor,totalFloor:totalFloor,bhk:bhk,built:built},function(response){$("#result").html("Price of the house is "+ response);});         
+            });
+        });
+      </script>  
+    
+ 
+    
+</html>
