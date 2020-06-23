@@ -17,7 +17,8 @@ def home():
 def predict():
 #     from sklearn.externals import joblib
     from joblib import load
-    model=joblib.load('house_price.ml')
+#     model=joblib.load('house_price.ml')
+    model=load('house_price.ml')
     house_price=model.predict([[int(request.args['place']),
                                 int(request.args['sqft']),
                                 int(request.args['yearsOld']),
