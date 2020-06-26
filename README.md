@@ -1,6 +1,6 @@
 # Bengalore Hose Price Prediction
 
-> In this Project The main aim of this project is to Deploy the model on Cloud server(AWS+heroku) & predict house prices based on various features.
+> In this Project i have worked on Bengalore house Price DataSet, the main aim of this project is to Deploy the model on Cloud server(Heroku) & predict house prices based on various features.
 
 ## Steps  for Heroku Server
 >* Train Model
@@ -11,12 +11,6 @@
 >* Deploy the model into heroku
 >* Web App is ready
 
-## Steps for AWS Server
+## Architecture of how web applicatin is running on Heroku Server
 
->* Train Model
->* Export the model
->* Create a LOCAL REST API with FLASK web server
->* Create Account in AWS 
->* Create EC2 instance on AWS server.
->* Deploy the model into EC2 instance with the help of winscp  & putty.
->* Web App is ready
+<img src="architechture.png"/>
