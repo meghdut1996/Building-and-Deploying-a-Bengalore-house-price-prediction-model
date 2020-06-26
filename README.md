@@ -13,4 +13,4 @@
 
 ## Architecture of how web applicatin is running on Heroku Server
 
-<img src="architechture.png"/>
+
