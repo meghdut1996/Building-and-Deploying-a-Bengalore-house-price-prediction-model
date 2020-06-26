@@ -2,7 +2,7 @@
 
 > In this Project i have worked on Bengalore house Price Prediction DataSet, the main aim of this project is to Deploy the model on Cloud server(Heroku) & predict house prices based on various features.
 
-## Steps  for Heroku Server
+## Steps  
 >* Train Model
 >* Export the model
 >* Create a LOCAL REST API with FLASK web server
