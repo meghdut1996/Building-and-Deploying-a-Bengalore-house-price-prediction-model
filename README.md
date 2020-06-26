@@ -1,6 +1,6 @@
 # Bengalore Hose Price Prediction
 
-> The main aim of this project is to Deploy the model on Cloud server(AWS+heroku) & predict house prices based on various features.
+> In this Project The main aim of this project is to Deploy the model on Cloud server(AWS+heroku) & predict house prices based on various features.
 
 ## Steps  for Heroku Server
 >* Train Model
