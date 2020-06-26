@@ -14,9 +14,9 @@
 ## Steps for AWS Server
 
 >* Train Model
-  * Export the model
-  * Create a LOCAL REST API with FLASK web server
-  * Create Account in AWS 
-  * Create EC2 instance on AWS server.
-  * Deploy the model into EC2 instance with the help of winscp  & putty.
-  * Web App is ready
+>* Export the model
+>* Create a LOCAL REST API with FLASK web server
+>* Create Account in AWS 
+>* Create EC2 instance on AWS server.
+>* Deploy the model into EC2 instance with the help of winscp  & putty.
+>* Web App is ready
