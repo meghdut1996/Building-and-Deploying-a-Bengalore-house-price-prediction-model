@@ -13,5 +13,6 @@
 
 ## Architecture of how web application is running on Heroku Server
 
-![architechture](https://user-images.githubusercontent.com/66274661/85815555-4c30f900-b786-11ea-9a10-156eecea0f32.png)
+![architechture](https://user-images.githubusercontent.com/66274661/85817052-8c927600-b78a-11ea-95d6-c0033df9b884.png)
+
 
