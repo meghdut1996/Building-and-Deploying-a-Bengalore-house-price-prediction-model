@@ -3,7 +3,7 @@
 > The main aim of this project is to Deploy the model on Cloud server(AWS+heroku) & predict house prices based on various features.
 
 ## Steps  for Heroku Server
->* Train Model
+> * Train Model
 * Export the model
 * Create a LOCAL REST API with FLASK web server
 * Commit Code into github
@@ -13,7 +13,7 @@
 
 ## Steps for AWS Server
 
->* Train Model
+> * Train Model
 * Export the model
 * Create a LOCAL REST API with FLASK web server
 * Create Account in AWS 
