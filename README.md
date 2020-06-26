@@ -5,8 +5,8 @@
 ## Steps  
 >* Train Model
 >* Export the model
->* Create a LOCAL REST API with FLASK web server
->* Commit Code into github
+>* Create a LOCAL REST API by using FLASK web framework.
+>* Commit Code into github repository.
 >* Link the github repository to heroku Account
 >* Deploy the model into heroku
 >* Web App is ready
