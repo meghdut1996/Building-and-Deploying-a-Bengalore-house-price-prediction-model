@@ -4,12 +4,12 @@
 
 ## Steps  for Heroku Server
 >* Train Model
-  * Export the model
-  * Create a LOCAL REST API with FLASK web server
-  * Commit Code into github
-  * Link the github repository to heroku Account
-  * Deploy the model into heroku
-  * Web App is ready
+>* Export the model
+>* Create a LOCAL REST API with FLASK web server
+>* Commit Code into github
+>* Link the github repository to heroku Account
+>* Deploy the model into heroku
+>* Web App is ready
 
 ## Steps for AWS Server
 
