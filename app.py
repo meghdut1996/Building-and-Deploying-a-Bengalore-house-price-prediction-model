@@ -28,7 +28,7 @@ def predict():
                                 int(request.args['built'])]])
     
     result=str(round(house_price[0],0))
-    return format_currency(result,'INR', locale='en_IN').replace(u'\xa0',u' ')
+    return format_currency(result,'INR', locale='en_IN').replace(u'\xa0',u'  ')
 
 if __name__ == "__main__":
     app.run(debug=True)
