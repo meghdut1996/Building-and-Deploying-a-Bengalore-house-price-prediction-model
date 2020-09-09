@@ -4,7 +4,7 @@
 <img src="api_images/image3.png" width="500" height="300">
 
 
-> In this Project i have worked on Bengalore house Price Prediction DataSet, the main aim of this project is to Deploy the model on Cloud server(Heroku) & predict house prices based on various features.
+> Creating a Bengalore house Price Prediction Machine Learning model on Cloud server(Heroku) & predict house prices based on various features.
 
 ## Steps  
 >* Train Model
