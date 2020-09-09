@@ -15,6 +15,8 @@
 
 ![architechture](https://user-images.githubusercontent.com/66274661/85817052-8c927600-b78a-11ea-95d6-c0033df9b884.png)
 
+![image1](https://user-images.githubusercontent.com/66274661/92592587-70986e00-f2bd-11ea-9923-6e32ead6c83d.png)
+
 
 
 
